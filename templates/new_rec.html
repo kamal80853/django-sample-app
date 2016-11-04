@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form class="form-signup span4" action="/insert/" method="post">{% csrf_token %}
+    <h2>Enter the details</h2>
+    <p>Enter Name:
+        <input type="text" name="name"></p>
+    <p>Enter ID:
+        <input type="number" name="id"></p>
+    <input type="submit" name="submit" class="btn btn-primary" value="Insert">
+</form>
+</body>
+</html>
